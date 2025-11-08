@@ -4,7 +4,7 @@ let refreshInterval = null;
 
 // Configuration
 const REFRESH_INTERVAL = 15 * 60 * 1000; // 15 minutes
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://gold-tracker-ymce.onrender.com';
 
 // Master tab system
 let isMasterTab = false;
