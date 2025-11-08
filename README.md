@@ -152,8 +152,8 @@ Prices shown are indicative estimates for the Chennai market. Actual prices may 
 ## 👨‍💻 Author
 
 Mohamed Saqib
-- GitHub: [themdsaqib29](https://github.com/your-username)
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/mohamed-saqib1029)
+- GitHub: [themdsaqib29](https://github.com/themdsaqib29)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamed-saqib1029)
 
 ## 📄 License
 
