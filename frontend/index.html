@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Price Tracker - Live Rates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>💰 Gold Price Tracker</h1>
+            <p>Live gold prices in India - Updated in real-time</p>
+        </header>
+
+        <!-- Live Prices Section -->
+        <section class="price-section">
+            <h2>Current Gold Rates</h2>
+            <div class="price-cards">
+                <div class="price-card">
+                    <div class="purity">24K Gold</div>
+                    <div class="price" id="gold24k">Loading...</div>
+                    <div class="unit">per gram</div>
+                </div>
+                <div class="price-card">
+                    <div class="purity">22K Gold</div>
+                    <div class="price" id="gold22k">Loading...</div>
+                    <div class="unit">per gram</div>
+                </div>
+                <div class="price-card">
+                    <div class="purity">18K Gold</div>
+                    <div class="price" id="gold18k">Loading...</div>
+                    <div class="unit">per gram</div>
+                </div>
+            </div>
+            <!-- After the closing </div> of price-cards, add this: -->
+            <div class="next-update-info">
+            <span id="nextUpdate">🕐 Next Chennai price update: Loading...</span>
+            </div>
+            <div class="last-updated" id="lastUpdated">Last updated: --</div>
+        </section>
+        <!-- Disclaimer Box -->
+            <div class="disclaimer-box">
+            <div class="disclaimer-icon">⚠️</div>
+            <div class="disclaimer-content">
+                <strong>Important Notice:</strong>
+                <p>Prices displayed are <strong>indicative estimates</strong> for the Chennai market based on international gold rates with a <strong>+14.5% local market adjustment</strong>. Actual prices may vary between jewelers based on:</p>
+                <ul>
+                <li>Making charges (varies by jeweler and design)</li>
+                <li>GST and other applicable taxes</li>
+                <li>Individual jeweler pricing policies</li>
+                <li>Market fluctuations throughout the day</li>
+                </ul>
+                <p><strong>Always verify current rates with your local jeweler before making any purchase decisions.</strong></p>
+                <p class="data-source">📍 Location: Chennai, Tamil Nadu | Data refreshed every 90 minutes</p>
+            </div>
+            </div>
+
+        <!-- GST Calculator -->
+        <section class="calculator-section">
+            <h2>💳 GST Calculator</h2>
+            <p>Calculate total cost including GST (3%) and making charges (2%)</p>
+            <div class="calculator">
+                <div class="input-group">
+                    <label for="goldPrice">Gold Price per gram (₹)</label>
+                    <input type="number" id="goldPrice" placeholder="Enter gold price" value="10000">
+                </div>
+                <div class="input-group">
+                    <label for="grams">Weight in Grams</label>
+                    <input type="number" id="grams" placeholder="Enter weight" value="10">
+                </div>
+                <button onclick="calculateGST()">Calculate Total Cost</button>
+                
+                <div class="result" id="gstResult" style="display: none;">
+                    <div class="result-row">
+                        <span>Base Price:</span>
+                        <span id="basePrice">₹0</span>
+                    </div>
+                    <div class="result-row">
+                        <span>GST (3%):</span>
+                        <span id="gst">₹0</span>
+                    </div>
+                    <div class="result-row">
+                        <span>Making Charges (2%):</span>
+                        <span id="makingCharges">₹0</span>
+                    </div>
+                    <div class="result-row total">
+                        <span>Total Amount:</span>
+                        <span id="totalPrice">₹0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Calculator -->
+        <section class="calculator-section">
+            <h2>📊 Investment Calculator</h2>
+            <p>Calculate how much gold you can buy with your budget</p>
+            <div class="calculator">
+                <div class="input-group">
+                    <label for="budget">Your Budget (₹)</label>
+                    <input type="number" id="budget" placeholder="Enter amount" value="100000">
+                </div>
+                <div class="input-group">
+                    <label for="purity">Gold Purity</label>
+                    <select id="purity">
+                        <option value="24k">24K Gold</option>
+                        <option value="22k" selected>22K Gold</option>
+                        <option value="18k">18K Gold</option>
+                    </select>
+                </div>
+                <button onclick="calculateInvestment()">Calculate Gold Amount</button>
+                
+                <div class="result" id="investmentResult" style="display: none;">
+                    <div class="result-row total">
+                        <span>You can buy:</span>
+                        <span id="goldAmount">0 grams</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Data powered by Gold-API | Built for educational purposes</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
