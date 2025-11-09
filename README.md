@@ -51,7 +51,7 @@ A real-time gold price tracking application with investment calculators, specifi
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[YOUR-USERNAME]/gold-tracker.git
+git clone https://github.com/themdsaqib29/gold-tracker.git
 cd gold-tracker
 ```
 
@@ -128,7 +128,12 @@ Calculates total cost with GST and making charges.
 
 ## 📱 Screenshots
 
-[Add screenshots after deployment]
+
+
+<img width="1907" height="943" alt="GST-Calculator png" src="https://github.com/user-attachments/assets/d39b5630-3895-4f19-8b0f-a92adbdff7cf" />
+
+<img width="1916" height="953" alt="investment-calculator png" src="https://github.com/user-attachments/assets/7fed2ebc-dd35-42e5-90e3-7e13d4d2e105" />
+
 
 ## 🔮 Future Enhancements
 
