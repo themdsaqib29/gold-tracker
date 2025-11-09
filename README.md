@@ -128,7 +128,9 @@ Calculates total cost with GST and making charges.
 
 ## 📱 Screenshots
 
+<img width="1907" height="816" alt="Screenshot 2025-11-09 232648" src="https://github.com/user-attachments/assets/bb80a099-4ff6-4447-911b-7c3e8d95df29" />
 
+<img width="1914" height="875" alt="image" src="https://github.com/user-attachments/assets/6478efbb-f970-4679-b832-acb28fb6e6bc" />
 
 <img width="1907" height="943" alt="GST-Calculator png" src="https://github.com/user-attachments/assets/d39b5630-3895-4f19-8b0f-a92adbdff7cf" />
 
