@@ -169,4 +169,4 @@ This project is for educational purposes.
 ## 🙏 Acknowledgments
 
 - Gold-API.com for unlimited gold price data
-- Chennai jewelers for market research data
+- Chennai jewellers for market research data
